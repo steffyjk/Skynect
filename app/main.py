@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.api.routes.user import router as user_routers
+from app.api.routes.auth import router as auth_routers
 
 def create_app() -> FastAPI:
     app = FastAPI(
@@ -10,6 +11,7 @@ def create_app() -> FastAPI:
 
     # Import and include routers here later
     app.include_router(user_routers)
+    app.include_router(auth_routers)
 
     @app.get("/")
     def root():
