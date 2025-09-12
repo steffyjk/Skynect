@@ -1,0 +1,1 @@
+# Base model w/ optimistic mixin
