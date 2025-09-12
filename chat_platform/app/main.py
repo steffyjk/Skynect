@@ -1,0 +1,1 @@
+# Entry: App creation, lifespan
